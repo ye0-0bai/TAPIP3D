@@ -1,9 +1,20 @@
 <div align="center">
 
 # TAPIP3D: Tracking Any Point in Persistent 3D Geometry
-
 <a href="https://arxiv.org/abs/XXXX.XXXXX"><img src='https://img.shields.io/badge/arXiv-Paper-red?logo=arxiv&logoColor=white' alt='arXiv'></a>
 <a href='https://tapip3d.github.io'><img src='https://img.shields.io/badge/Project_Page-Website-green?logo=googlechrome&logoColor=white' alt='Project Page'></a>
+
+This code accompanies the paper
+
+**TAPIP3D: Tracking Any Point in Persistent 3D Geometry** \
+Bowei Zhang*, Lei Ke*, Adam W. Harley and Katerina Fragkiadaki
+
+[Bowei Zhang](https://scholar.google.com/citations?user=tYH72AYAAAAJ)<sup>1,2</sup>*, [Lei Ke](https://www.kelei.site/)<sup>1</sup>\*, [Adam W. Harley](https://adamharley.com/)<sup>1</sup>, [Katerina Fragkiadaki](https://www.cs.cmu.edu/~katef/)<sup>1</sup>
+
+<sup>1</sup>Carnegie Mellon University   &nbsp;  <sup>2</sup>Peking University &nbsp;  <sup>3</sup>Stanford University
+
+\* Equal Contribution
+
 <!-- <a href='https://huggingface.co/spaces/your-username/project'><img src='https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Live_Demo-blue'></a> -->
 
 </div>
@@ -112,12 +123,10 @@ python inference.py --input_path demo_inputs/dexycb.npz --checkpoint checkpoints
 If you find this project useful, please consider citing:
 
 ```
-@misc{your2025tapip3d,
-    title={TAPIP3D: Tracking Any Point in Persistent 3D Geometry},
-    author={Your Name and Collaborators},
-    year={2025},
-    eprint={XXXX.XXXXX},
-    archivePrefix={arXiv},
-    primaryClass={cs.CV}
+@article{tapip3d,
+  title={TAPIP3D: Tracking Any Point in Persistent 3D Geometry},
+  author={Zhang, Bowei and Ke, Lei and Harley, Adam W and Fragkiadaki, Katerina},
+  journal={arXiv preprint arXiv:XXXX.XXXXX},
+  year={2025}
 }
 ```
