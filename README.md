@@ -8,7 +8,7 @@
 
 </div>
 
-<img src="/media/teaser1.gif" width="100%" alt="TAPIP3D overview">
+<img src="./media/teaser1.gif" width="100%" alt="TAPIP3D overview">
 
 ## Overview
 **TAPIP3D** is a method for long-term 3D point tracking in monocular RGB and RGB-D video sequences. It introduces a 3D feature cloud representation that lifts image features into a persistent world coordinate space, canceling out camera motion and enabling accurate trajectory estimation across frames.
@@ -66,7 +66,6 @@ The script accepts as input either an `.mp4` video file or an `.npz` file. If pr
 
 For demonstration purposes, the script uses a 32x32 grid of points at the first frame as queries.
 
-Please first download the demo videos from [here](https://huggingface.co/zbww/tapip3d/tree/main/demo_inputs) and put them in the `demo_inputs/` directory.
 
 ### Inference with Monocular Video
 
@@ -74,7 +73,7 @@ By providing an video as `--input_path`, the script first runs [MegaSAM](https:/
 
 **Demo 1**
 
-<img src="/media/demo1.gif" width="100%" alt="Demo 1">
+<img src="./media/demo1.gif" width="100%" alt="Demo 1">
 
 To run inference:
 
@@ -90,7 +89,7 @@ python visualize.py <result_npz_path>
 
 **Demo 2**
 
-<img src="/media/demo2.gif" width="100%" alt="Demo 2">
+<img src="./media/demo2.gif" width="100%" alt="Demo 2">
 
 ```bash
 python inference.py --input_path demo_inputs/pstudio.mp4 --checkpoint checkpoints/tapip3d_final.pth --resolution_factor 2
@@ -99,10 +98,11 @@ python inference.py --input_path demo_inputs/pstudio.mp4 --checkpoint checkpoint
 **Inference with Known Depths and Camera Parameters**
 
 If an `.npz` file containing all four keys (`rgb`, `depths`, `intrinsics`, `extrinsics`) is provided, the model will operate in an aligned global frame, generating point trajectories in world coordinates.
+We provide one example `.npz` file at [here](https://huggingface.co/zbww/tapip3d/resolve/main/demo_inputs/dexycb.npz?download=true) and please put it in the `demo_inputs/` directory.
 
 **Demo 3**
 
-<img src="/media/demo3.gif" width="100%" alt="Demo 3">
+<img src="./media/demo3.gif" width="100%" alt="Demo 3">
 
 ```bash
 python inference.py --input_path demo_inputs/dexycb.npz --checkpoint checkpoints/tapip3d_final.pth --resolution_factor 2

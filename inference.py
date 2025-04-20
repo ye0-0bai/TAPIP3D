@@ -1,3 +1,5 @@
+# Copyright (c) TAPIP3D team(https://tapip3d.github.io/)
+
 from concurrent.futures import ThreadPoolExecutor
 import shlex
 import tap

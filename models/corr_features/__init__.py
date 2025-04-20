@@ -1,3 +1,5 @@
+# Copyright (c) TAPIP3D team(https://tapip3d.github.io/)
+
 from box import Box
 import torch
 import torch.nn as nn

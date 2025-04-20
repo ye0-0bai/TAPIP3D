@@ -1,3 +1,5 @@
+# Copyright (c) TAPIP3D team(https://tapip3d.github.io/)
+
 from typing import List, Optional, Tuple
 import torch
 from dataclasses import dataclass

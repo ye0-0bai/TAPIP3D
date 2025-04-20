@@ -1,3 +1,5 @@
+# Copyright (c) TAPIP3D team(https://tapip3d.github.io/)
+
 from typing import Any, Callable, Dict, Generator, List, Literal, Optional, Tuple, Union
 from box import Box
 from omegaconf import DictConfig

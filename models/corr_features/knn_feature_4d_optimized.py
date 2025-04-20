@@ -1,3 +1,5 @@
+# Copyright (c) TAPIP3D team(https://tapip3d.github.io/)
+
 from dataclasses import dataclass, fields
 from box import Box
 from typing import Any, Callable, List, Optional, Tuple, Union
