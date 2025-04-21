@@ -17,7 +17,7 @@
 <img src="./media/teaser1.gif" width="100%" alt="TAPIP3D overview">
 
 ## Overview
-**TAPIP3D** is a method for long-term 3D point tracking in monocular RGB and RGB-D video sequences. It introduces a 3D feature cloud representation that lifts image features into a persistent world coordinate space, canceling out camera motion and enabling accurate trajectory estimation across frames.
+**TAPIP3D** is a method for long-term **feed-forward** 3D point tracking in monocular RGB and RGB-D video sequences. It introduces a 3D feature cloud representation that lifts image features into a persistent world coordinate space, canceling out camera motion and enabling accurate trajectory estimation across frames.
 
 ## Installation
 ### Installing dependencies
