@@ -1,7 +1,7 @@
 <div align="center">
 
 # TAPIP3D: Tracking Any Point in Persistent 3D Geometry
-<a href="https://arxiv.org/abs/XXXX.XXXXX"><img src='https://img.shields.io/badge/arXiv-Paper-red?logo=arxiv&logoColor=white' alt='arXiv'></a>
+<a href="https://arxiv.org/abs/2504.14717"><img src='https://img.shields.io/badge/arXiv-Paper-red?logo=arxiv&logoColor=white' alt='arXiv'></a>
 <a href='https://tapip3d.github.io'><img src='https://img.shields.io/badge/Project_Page-Website-green?logo=googlechrome&logoColor=white' alt='Project Page'></a>
 
 [Bowei Zhang](https://scholar.google.com/citations?user=tYH72AYAAAAJ)<sup>1,2</sup>*, [Lei Ke](https://www.kelei.site/)<sup>1</sup>\*, [Adam W. Harley](https://adamharley.com/)<sup>3</sup>, [Katerina Fragkiadaki](https://www.cs.cmu.edu/~katef/)<sup>1</sup>
@@ -121,7 +121,7 @@ If you find this project useful, please consider citing:
 @article{tapip3d,
   title={TAPIP3D: Tracking Any Point in Persistent 3D Geometry},
   author={Zhang, Bowei and Ke, Lei and Harley, Adam W and Fragkiadaki, Katerina},
-  journal={arXiv preprint arXiv:XXXX.XXXXX},
+  journal={arXiv preprint arXiv:2504.14717},
   year={2025}
 }
 ```
