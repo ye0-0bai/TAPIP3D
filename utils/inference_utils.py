@@ -154,18 +154,18 @@ def inference(
             depths=depths[None].flip(dims=(1,)),
             intrinsics=intrinsics[None].flip(dims=(1,)),
             extrinsics=extrinsics[None].flip(dims=(1,)),
-            query_point=torch.cat([T - 1 - query_point[..., :1], query_point[..., 1:]], dim=-1),
+            query_point=torch.cat([T - 1 - query_point[..., :1], query_point[..., 1:]], dim=-1)[None],
             num_iters=num_iters,
             depth_roi=_depth_roi,
             grid_size=grid_size,
         )
         preds.coords = torch.where(
-            repeat(torch.arange(T, device=video.device), 't -> b t n 3', b=1, n=N) < repeat(query_point[..., 0], 'b n -> b t n 3', t=T, n=N),
+            repeat(torch.arange(T, device=video.device), 't -> b t n 3', b=1, n=N) < repeat(query_point[..., 0][None], 'b n -> b t n 3', t=T, n=N),
             preds_backward.coords.flip(dims=(1,)),
             preds.coords
         )
         preds.visibs = torch.where(
-            repeat(torch.arange(T, device=video.device), 't -> b t n', b=1, n=N) < repeat(query_point[..., 0], 'b n -> b t n', t=T, n=N),
+            repeat(torch.arange(T, device=video.device), 't -> b t n', b=1, n=N) < repeat(query_point[..., 0][None], 'b n -> b t n', t=T, n=N),
             preds_backward.visibs.flip(dims=(1,)),
             preds.visibs
         )
